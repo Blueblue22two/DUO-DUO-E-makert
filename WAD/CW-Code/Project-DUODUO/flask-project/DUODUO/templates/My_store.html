@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../static/image/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../static/css/my_store.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/loading.css">
+        <title>My store</title>
+        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <h1 class = "header"></h1>
+            <br>
+           <!-- Menu -->
+           <div class="top_bar">
+            <ul class="menu"> 
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/Store">Store</a></li> -->
+                <li><a href="/AddProduct">Adding products</a></li>
+                <li><a href="/ModifyPage">Modifying product</a></li>
+            </ul>
+           </div>
+           <br>
+           <br>
+
+            <div id = "data_statistics">
+                <div id="volume">
+                    <label>Total sales volume:</label>
+                    <input type="text" id="total_volume" value="0" readonly>
+                </div>
+                <br>
+
+                <div id="sales">
+                    <label>Total sales:</label>
+                    <input type="text" id="total_sales" value="0" readonly>
+                </div>
+                <br>
+                <!-- number of products in store -->
+                <div id="goods">
+                    <label>Number of goods:</label>
+                    <input type="text" id="num_goods" value="0" readonly>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../static/js/my_store.js"></script>
+    </body>
+</html>

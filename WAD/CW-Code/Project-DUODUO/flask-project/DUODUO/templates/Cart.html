@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../static/image/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../static/css/cart.css">
+        <title>My Cart</title>
+        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="head_div">
+            <h1>My Cart</h1>
+        </div>
+        <div class="top_bar">
+          <div class="home-btn">
+              <a href="/">Home</a>
+          </div>
+        </div>
+        <div class="main">
+            <!-- table of products -->
+            <table>
+                <thead>
+                  <tr>
+                    <th>Select</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody id="cartTable">
+                  <!-- example: -->
+                  <!-- <tr>
+                    <td><input type="checkbox" class="itemCheckBox"></td>
+                    <td>Product A</td>
+                    <td>$100</td>
+                    <td><input type="number" class="itemQuantity" min="1" max="99" value="1" readonly="readonly"></td>
+                  </tr> -->
+                </tbody>
+              </table>
+              <!-- actions -->
+              <div class="actions">
+                <!-- select all -->
+                <div class="selectAll_div">
+                  <input type="checkbox" id="selectAllCheckbox"><span>Select all</span>
+                </div>
+                <button id="removeSelectedButton">Remove</button>
+                <div class="total_div">
+                  <span>Total Price: $</span><input type="text" id="totalPrice" readonly value="0">
+                </div>
+                <button id="payButton">Pay</button>
+              </div>
+        </div>
+        <!-- Load animation -->
+        <div class="spinner"></div>
+        <!-- footer -->
+        <footer>
+            <div class="xtx-copyright">
+            <div class="container">
+                <p>DUO DUO Market</p>
+                <p>CopyRight @ 202018010410 Calvin L5C2 WAD CourseWork</p>
+            </div>
+            </div>
+        </footer>
+    <script type="text/javascript" src="../static/js/cart.js"></script>
+    </body>    
+</html>
+    

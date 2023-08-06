@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../static/image/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../static/css/payment.css">
+        <title>Payment</title>
+        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- hiden input, be used to get value -->
+        <input type="hidden" id="pri" value="{{ price }}">
+        <input type="hidden" id="Pid" value="{{ Pid }}">
+        <input type="hidden" id="num" value="{{ number }}">
+        <div class ="head_div">
+            <h1 class = "header">Payment</h1>
+        </div> 
+        <div class="main">
+            <div id="price_div">
+                <span>$</span>
+                <!-- show total price -->
+            </div>
+            <span>Please select payment method:</span>
+            <!-- alipay and wechat pay icon -->
+            <div class="pay_div">
+                <div class="alipay_div">
+                    <span>Alipay</span>
+                    <img id="alipay" src="../static/image/AliPayjpg.jpg">
+                </div>
+                <div class="wechat_div">
+                    <span>Wechat pay</span>
+                    <img id="wechat" src="../static/image/wxpaylogo_xxxhdpi.jpg">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="xtx-copyright">
+              <div class="container">
+                <p>DUO DUO Market</p>
+                <p>CopyRight @ 202018010410 Calvin L5C2 WAD CourseWork</p>
+              </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../static/js/payment.js"></script>
+    </body>    
+</html>

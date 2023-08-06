@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="icon" href="../static/image/favicon.ico">
+  <link rel="stylesheet" href="../static/css/product.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/loading.css">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- hiden input, be used to get value -->
+  <input type="hidden" id="dis" value="{{ discount }}">
+  <input type="hidden" id="pri" value="{{ price }}">
+  <input type="hidden" id="Pid" value="{{ Pid }}">
+  <div class="container">
+    <!-- header and top bar -->
+    <header>
+      <h1 class="header_Name">DUO DUO Market</h1>
+      <!-- top bar -->
+      <div class="top-bar">
+        <div class="home-btn">
+          <a href="/">Home</a>
+        </div>
+    </header>
+    <main>
+      <!-- show product -->
+      <div class="product-details">
+        <div class="product-images">
+          <img id = "img1" class="product-image" src="data:image/png;base64,{{ image1 }}" alt="Product Image 1" style="display: block;">
+          <img id = "img2" class="product-image" src="data:image/png;base64,{{ image2 }}" alt="Product Image 2" style="display: none;">
+          <!-- change imgae button -->
+          <button class="prev-image-btn" onclick="changeIMG()">&#8249;</button>
+          <button class="next-image-btn" onclick="changeIMG()">&#8250;</button>
+        </div>
+        <!-- information of product -->
+        <div class="product-info">
+          <h2 class="product-name">{{ name }}</h2>
+          <p class="product-description">{{ description }}</p>
+          <!-- price & discount price of product -->
+          <div class="product-pricing">
+            <p class="product-price">Price: <span>${{ price }}</span></p>
+            <p class="product-discounted-price">Discounted Price: ${{ discount }}</p>
+          </div>
+          <!-- like, dislike -->
+          <div class="product-feedback">
+            <div class ="like">
+              <button class="like_btn">&#x2661; Like</button>
+              <input type="number" id="like_count" value="{{ likes }}" readonly>
+            </div>
+            <div class ="dislike">
+              <button class="dislike_btn">&#x2764 Dislike</button>
+              <input type="number" id="dislike_count" value="{{ dislikes }}" readonly>
+            </div>
+          </div>
+          <br>
+          <div class="product-actions">
+            <div class="quantity-control">
+              <label>Number:</label>
+              <input id="quantity-input" type="number" min="1" max="99" value="1">
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="buy-btn">Buy</button>
+          </div>
+          <!-- click and jump to comment page -->
+          <button class="comment-btn">Comment</button>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="xtx-copyright">
+      <div class="container">
+          <p>DUO DUO Market</p>
+          <p>CopyRight @ 202018010410 Calvin L5C2 WAD CourseWork</p>
+      </div>
+      </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="../static/js/product.js"></script>
+</body>
+</html>

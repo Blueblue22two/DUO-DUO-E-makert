@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../static/image/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../static/css/comment.css">
+        <title>Comment area</title>
+        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="hidden" id="Pid" value="{{ Pid }}">
+        <div class="head_div">
+            <h1>Comment area</h1>
+        </div>
+        <div class="top_bar">
+          <div class="home-btn">
+              <a href="/">Home</a>
+          </div>
+      </div>
+        <div class="main">
+
+            <!-- area of display comments -->
+            <div class="comments"> 
+                <!-- example: -->
+                <!-- <div class="comment">
+                    <span class="author">John:</span> This is a great product!
+                    <span>date</span>
+                </div>
+                <div class="comment">
+                    <span class="author">Mary:</span> I love this product. Highly recommended!
+                </div> -->
+            </div>
+
+            <!-- area of post a comment -->
+            <div class="post_div" style="display: block;">
+               <form>
+                    <label for="comment">Post a Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                    <br>
+                    <button class="post-button">Post</button>
+                </form>
+            </div>
+        </div>
+        <!-- Load animation -->
+        <div class="spinner"></div>
+        <!-- footer -->
+        <footer>
+            <div class="xtx-copyright">
+            <div class="container">
+                <p>DUO DUO Market</p>
+                <p>CopyRight @ 202018010410 Calvin L5C2 WAD CourseWork</p>
+            </div>
+            </div>
+        </footer>
+    <script type="text/javascript" src="../static/js/comment.js"></script>
+    </body>    
+</html>

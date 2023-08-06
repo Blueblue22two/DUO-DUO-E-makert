@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="icon" href="../static/image/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../static/css/promotions.css">
+        <title>Promotion page</title>
+        <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class ="header_div">
+        <h1 class = "header">Promotional items</h1>
+    </div> 
+
+    <div class="container">
+    <!--Top bar of menu -->
+        <div class="top_bar">
+            <ul class = "bar_list">
+                <li><a href="/">Home</a></li>
+                <!-- Drop-down menu -->
+                <div class="nav1">
+                    <a class = "drop_btn" href="/Categories?category=All">
+                        Categories
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                        </svg>
+                    </a>
+                    <div class="nav2">
+                        <a href="/Categories?category=Comics">Comics</a>
+                        <a href="/Categories?category=Novels">Novels</a>
+                        <a href="/Categories?category=Garage%20Kit">Garage Kit</a>
+                        <a href="/Categories?category=Clothes">Clothes</a>
+                    </div>
+                </div> 
+            </ul>
+            <!-- search bar -->
+            <form class="search_form">
+                <label class="search_label">Search:</label>
+                <input id="search" type="text" placeholder="Search product or store?">
+                <button id="search_btn" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <!-- content -->
+        <p id ="product_p">List of promotional items:</p>
+        <div id="products_div" class="products-container">
+            <!-- dispaly all promotion products -->
+        </div>
+    </div>
+     <!-- footer -->
+     <footer>
+        <div class="xtx-copyright">
+          <div class="container">
+            <p>DUO DUO Market</p>
+            <p>CopyRight @ 202018010410 Calvin L5C2 WAD CourseWork</p>
+          </div>
+        </div>
+    </footer>
+    </body>
+    <script type="text/javascript" src="../static/js/promotion.js"></script>
+</html>
